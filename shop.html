@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — Aurélie Parfums</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="perfume.css">
+</head>
+<body>
+
+  <!-- NAVBAR — same as index.html, but starts scrolled/dark since no hero video here -->
+  <nav id="navbar" class="scrolled">
+    <div class="nav-left">
+      <a href="index.html">Home</a>
+      <a href="shop.html" class="nav-active">Shop</a>
+      <a href="index.html#quiz-section">Discover</a>
+      <a href="index.html#fragrance-finder">Ingredients</a>
+      <a href="index.html##about-brand">about</a>
+    </div>
+    <a href="index.html" class="nav-logo">Aurélie<span>Parfums</span></a>
+    <div class="nav-right nav-text-links">
+      <a href="#" class="nav-icon" id="searchTrigger" aria-label="Search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg>
+        Search
+      </a>
+      
+      <a href="#" class="nav-icon" aria-label="Cart">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        Cart (0)
+      </a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu-backdrop" id="mobileMenuBackdrop"></div>
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation">
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">&#x2715;</button>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="index.html#quiz-section">Discover</a>
+    <a href="index.html#fragrance-finder">Ingredients</a>
+    <a href="journal.html">Journal</a>
+  </div>
+
+  <!-- SHOP HERO BANNER -->
+  <section class="shop-hero">
+    <div class="shop-hero-content">
+      <p class="shop-hero-eyebrow">Our Collection</p>
+      <h1 class="shop-hero-title">Shop Our Wide<br>Selection of <em>Scents</em></h1>
+      <p class="shop-hero-sub">Six signature fragrances, crafted from the world's rarest botanicals.</p>
+    </div>
+    
+  
+  </section>
+
+
+
+  <!-- SHOP GRID -->
+<section class="shop-page">
+  <div class="shop-page-grid" id="shopPageGrid">
+
+
+        <!-- ─── CARD 1 : Velvet Oud ─────────────────────── -->
+    <div class="shop-card-wrap" data-id="velvet-oud">
+      <div class="shop-card">
+        <!-- FRONT -->
+        <div class="shop-face shop-front">
+          
+          <div class="shop-card-img">
+            <img src="img2/16.jpg" alt="Velvet Oud" />
+          </div>
+          <p class="shop-card-name">Velvet Oud</p>
+          <p class="shop-card-price">₹5,800</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="velvet-oud">Add to Cart</button>
+        </div>
+        <!-- BACK -->
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Velvet Oud</h3>
+          <p class="shop-back-desc">Deep, smoky oud layered over warm saffron and black amber — announces your presence before you enter.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Oud</span>
+            <span class="shop-back-note">Saffron</span>
+            <span class="shop-back-note">Black Amber</span>
+            <span class="shop-back-note">Sandalwood</span>
+          </div>
+          <p class="shop-back-price">₹5,800</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="velvet-oud">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CARD 2 : Néroli Blanc ──────────────────── -->
+    <div class="shop-card-wrap" data-id="neroli-blanc">
+      <div class="shop-card">
+        <div class="shop-face shop-front">
+          <div class="shop-card-img">
+            <img src="img2/17.jpg" alt="Néroli Blanc" />
+          </div>
+          <p class="shop-card-name">Néroli Blanc</p>
+          <p class="shop-card-price">₹3,900</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="neroli-blanc">Add to Cart</button>
+        </div>
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Néroli Blanc</h3>
+          <p class="shop-back-desc">Sun-drenched neroli blossoms over a clean musk base — light as morning air, bright as a new beginning.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Neroli</span>
+            <span class="shop-back-note">Bergamot</span>
+            <span class="shop-back-note">White Musk</span>
+            <span class="shop-back-note">Green Tea</span>
+          </div>
+          <p class="shop-back-price">₹3,900</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="neroli-blanc">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CARD 3 : Lumière ───────────────────────── -->
+    <div class="shop-card-wrap" data-id="lumiere">
+      <div class="shop-card">
+        <div class="shop-face shop-front">
+          <div class="shop-card-img">
+            <img src="img2/18.jpg" alt="Lumière" />
+          </div>
+          <p class="shop-card-name">Lumière</p>
+          <p class="shop-card-price">₹4,200</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="lumiere">Add to Cart</button>
+        </div>
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Lumière</h3>
+          <p class="shop-back-desc">A radiant floral heart warmed by soft musk and white cedar — luminous, effortless, made to be worn every single day.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Peony</span>
+            <span class="shop-back-note">White Musk</span>
+            <span class="shop-back-note">Cedar</span>
+            <span class="shop-back-note">Bergamot</span>
+          </div>
+          <p class="shop-back-price">₹4,200</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="lumiere">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CARD 4 : Ambre Rose ────────────────────── -->
+    <div class="shop-card-wrap" data-id="ambre-rose">
+      <div class="shop-card">
+        <div class="shop-face shop-front">
+          <span class="shop-bestseller-badge">Best Seller</span>
+          <div class="shop-card-img">
+            <img src="img2/19.jpg" alt="Ambre Rose" />
+          </div>
+          <p class="shop-card-name">Ambre Rose</p>
+          <p class="shop-card-price">₹4,600</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="ambre-rose">Add to Cart</button>
+        </div>
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Ambre Rose</h3>
+          <p class="shop-back-desc">Turkish rose absolute dissolved into warm amber and vanilla — the most romantic scent we have ever made.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Turkish Rose</span>
+            <span class="shop-back-note">Amber</span>
+            <span class="shop-back-note">Vanilla</span>
+            <span class="shop-back-note">Tonka Bean</span>
+          </div>
+          <p class="shop-back-price">₹4,600</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="ambre-rose">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CARD 5 : Santal Doux ───────────────────── -->
+    <div class="shop-card-wrap" data-id="santal-doux">
+      <div class="shop-card">
+        <div class="shop-face shop-front">
+          <div class="shop-card-img">
+            <img src="img2/20.jpg" alt="Santal Doux" />
+          </div>
+          <p class="shop-card-name">Santal Doux</p>
+          <p class="shop-card-price">₹4,400</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="santal-doux">Add to Cart</button>
+        </div>
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Santal Doux</h3>
+          <p class="shop-back-desc">Creamy mysore sandalwood with a whisper of iris and soft violet — quiet confidence in a bottle.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Sandalwood</span>
+            <span class="shop-back-note">Iris</span>
+            <span class="shop-back-note">Violet</span>
+            <span class="shop-back-note">Soft Musk</span>
+          </div>
+          <p class="shop-back-price">₹4,400</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="santal-doux">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CARD 6 : Fleur Éternelle ────────────────── -->
+    <div class="shop-card-wrap" data-id="fleur-eternelle">
+      <div class="shop-card">
+        <div class="shop-face shop-front">
+          <div class="shop-card-img">
+            <img src="img2/21.jpg" alt="Fleur Éternelle" />
+          </div>
+          <p class="shop-card-name">Fleur Éternelle</p>
+          <p class="shop-card-price">₹4,900</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="fleur-eternelle">Add to Cart</button>
+        </div>
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Fleur Éternelle</h3>
+          <p class="shop-back-desc">An eternal bouquet of white jasmine and gardenia, dried on warm musk — timeless, feminine, unforgettable.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Jasmine</span>
+            <span class="shop-back-note">Gardenia</span>
+            <span class="shop-back-note">Peach</span>
+            <span class="shop-back-note">White Musk</span>
+          </div>
+          <p class="shop-back-price">₹4,900</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="fleur-eternelle">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CARD 1 : Velvet Oud ─────────────────────── -->
+    <div class="shop-card-wrap" data-id="velvet-oud">
+      <div class="shop-card">
+        <!-- FRONT -->
+        <div class="shop-face shop-front">
+          <div class="shop-card-img">
+            <img src="img2/4.jpg" alt="Velvet Oud" />
+          </div>
+          <p class="shop-card-name">Velvet Oud</p>
+          <p class="shop-card-price">₹5,800</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="velvet-oud">Add to Cart</button>
+        </div>
+        <!-- BACK -->
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Velvet Oud</h3>
+          <p class="shop-back-desc">Deep, smoky oud layered over warm saffron and black amber — announces your presence before you enter.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Oud</span>
+            <span class="shop-back-note">Saffron</span>
+            <span class="shop-back-note">Black Amber</span>
+            <span class="shop-back-note">Sandalwood</span>
+          </div>
+          <p class="shop-back-price">₹5,800</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="velvet-oud">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CARD 2 : Néroli Blanc ──────────────────── -->
+    <div class="shop-card-wrap" data-id="neroli-blanc">
+      <div class="shop-card">
+        <div class="shop-face shop-front">
+          <div class="shop-card-img">
+            <img src="img2/23.jpg" alt="Néroli Blanc" />
+          </div>
+          <p class="shop-card-name">Néroli Blanc</p>
+          <p class="shop-card-price">₹3,900</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="neroli-blanc">Add to Cart</button>
+        </div>
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Néroli Blanc</h3>
+          <p class="shop-back-desc">Sun-drenched neroli blossoms over a clean musk base — light as morning air, bright as a new beginning.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Neroli</span>
+            <span class="shop-back-note">Bergamot</span>
+            <span class="shop-back-note">White Musk</span>
+            <span class="shop-back-note">Green Tea</span>
+          </div>
+          <p class="shop-back-price">₹3,900</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="neroli-blanc">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CARD 3 : Lumière ───────────────────────── -->
+    <div class="shop-card-wrap" data-id="lumiere">
+      <div class="shop-card">
+        <div class="shop-face shop-front">
+          <div class="shop-card-img">
+            <img src="img2/24.jpg" alt="Lumière" />
+          </div>
+          <p class="shop-card-name">Lumière</p>
+          <p class="shop-card-price">₹4,200</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="lumiere">Add to Cart</button>
+        </div>
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Lumière</h3>
+          <p class="shop-back-desc">A radiant floral heart warmed by soft musk and white cedar — luminous, effortless, made to be worn every single day.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Peony</span>
+            <span class="shop-back-note">White Musk</span>
+            <span class="shop-back-note">Cedar</span>
+            <span class="shop-back-note">Bergamot</span>
+          </div>
+          <p class="shop-back-price">₹4,200</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="lumiere">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CARD 4 : Ambre Rose ────────────────────── -->
+    <div class="shop-card-wrap" data-id="ambre-rose">
+      <div class="shop-card">
+        <div class="shop-face shop-front">
+          <span class="shop-bestseller-badge">Best Seller</span>
+          <div class="shop-card-img">
+            <img src="img2/25.jpg" alt="Ambre Rose" />
+          </div>
+          <p class="shop-card-name">Ambre Rose</p>
+          <p class="shop-card-price">₹4,600</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="ambre-rose">Add to Cart</button>
+        </div>
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Ambre Rose</h3>
+          <p class="shop-back-desc">Turkish rose absolute dissolved into warm amber and vanilla — the most romantic scent we have ever made.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Turkish Rose</span>
+            <span class="shop-back-note">Amber</span>
+            <span class="shop-back-note">Vanilla</span>
+            <span class="shop-back-note">Tonka Bean</span>
+          </div>
+          <p class="shop-back-price">₹4,600</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="ambre-rose">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CARD 5 : Santal Doux ───────────────────── -->
+    <div class="shop-card-wrap" data-id="santal-doux">
+      <div class="shop-card">
+        <div class="shop-face shop-front">
+          <div class="shop-card-img">
+            <img src="img2/26.jpg" alt="Santal Doux" />
+          </div>
+          <p class="shop-card-name">Santal Doux</p>
+          <p class="shop-card-price">₹4,400</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="santal-doux">Add to Cart</button>
+        </div>
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Santal Doux</h3>
+          <p class="shop-back-desc">Creamy mysore sandalwood with a whisper of iris and soft violet — quiet confidence in a bottle.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Sandalwood</span>
+            <span class="shop-back-note">Iris</span>
+            <span class="shop-back-note">Violet</span>
+            <span class="shop-back-note">Soft Musk</span>
+          </div>
+          <p class="shop-back-price">₹4,400</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="santal-doux">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CARD 6 : Fleur Éternelle ────────────────── -->
+    <div class="shop-card-wrap" data-id="fleur-eternelle">
+      <div class="shop-card">
+        <div class="shop-face shop-front">
+          <div class="shop-card-img">
+            <img src="img2/27.jpg" alt="Fleur Éternelle" />
+          </div>
+          <p class="shop-card-name">Fleur Éternelle</p>
+          <p class="shop-card-price">₹4,900</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="fleur-eternelle">Add to Cart</button>
+        </div>
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Fleur Éternelle</h3>
+          <p class="shop-back-desc">An eternal bouquet of white jasmine and gardenia, dried on warm musk — timeless, feminine, unforgettable.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Jasmine</span>
+            <span class="shop-back-note">Gardenia</span>
+            <span class="shop-back-note">Peach</span>
+            <span class="shop-back-note">White Musk</span>
+          </div>
+          <p class="shop-back-price">₹4,900</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="fleur-eternelle">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- ─── CARD 1 : Velvet Oud ─────────────────────── -->
+    <div class="shop-card-wrap" data-id="velvet-oud">
+      <div class="shop-card">
+        <!-- FRONT -->
+        <div class="shop-face shop-front">
+          <span class="shop-bestseller-badge">Best Seller</span>
+          <div class="shop-card-img">
+            <img src="img2/28.jpg" alt="Velvet Oud" />
+          </div>
+          <p class="shop-card-name">Velvet Oud</p>
+          <p class="shop-card-price">₹5,800</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="velvet-oud">Add to Cart</button>
+        </div>
+        <!-- BACK -->
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Velvet Oud</h3>
+          <p class="shop-back-desc">Deep, smoky oud layered over warm saffron and black amber — announces your presence before you enter.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Oud</span>
+            <span class="shop-back-note">Saffron</span>
+            <span class="shop-back-note">Black Amber</span>
+            <span class="shop-back-note">Sandalwood</span>
+          </div>
+          <p class="shop-back-price">₹5,800</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="velvet-oud">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CARD 2 : Néroli Blanc ──────────────────── -->
+    <div class="shop-card-wrap" data-id="neroli-blanc">
+      <div class="shop-card">
+        <div class="shop-face shop-front">
+          <div class="shop-card-img">
+            <img src="img2/29.jpg" alt="Néroli Blanc" />
+          </div>
+          <p class="shop-card-name">Néroli Blanc</p>
+          <p class="shop-card-price">₹3,900</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="neroli-blanc">Add to Cart</button>
+        </div>
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Néroli Blanc</h3>
+          <p class="shop-back-desc">Sun-drenched neroli blossoms over a clean musk base — light as morning air, bright as a new beginning.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Neroli</span>
+            <span class="shop-back-note">Bergamot</span>
+            <span class="shop-back-note">White Musk</span>
+            <span class="shop-back-note">Green Tea</span>
+          </div>
+          <p class="shop-back-price">₹3,900</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="neroli-blanc">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CARD 3 : Lumière ───────────────────────── -->
+    <div class="shop-card-wrap" data-id="lumiere">
+      <div class="shop-card">
+        <div class="shop-face shop-front">
+          <div class="shop-card-img">
+            <img src="img2/30.jpg" alt="Lumière" />
+          </div>
+          <p class="shop-card-name">Lumière</p>
+          <p class="shop-card-price">₹4,200</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="lumiere">Add to Cart</button>
+        </div>
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Lumière</h3>
+          <p class="shop-back-desc">A radiant floral heart warmed by soft musk and white cedar — luminous, effortless, made to be worn every single day.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Peony</span>
+            <span class="shop-back-note">White Musk</span>
+            <span class="shop-back-note">Cedar</span>
+            <span class="shop-back-note">Bergamot</span>
+          </div>
+          <p class="shop-back-price">₹4,200</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="lumiere">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CARD 1 : Velvet Oud ─────────────────────── -->
+    <div class="shop-card-wrap" data-id="velvet-oud">
+      <div class="shop-card">
+        <!-- FRONT -->
+        <div class="shop-face shop-front">
+          <span class="shop-bestseller-badge">Best Seller</span>
+          <div class="shop-card-img">
+            <img src="img2/1.jpg" alt="Velvet Oud" />
+          </div>
+          <p class="shop-card-name">Velvet Oud</p>
+          <p class="shop-card-price">₹5,800</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="velvet-oud">Add to Cart</button>
+        </div>
+        <!-- BACK -->
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Velvet Oud</h3>
+          <p class="shop-back-desc">Deep, smoky oud layered over warm saffron and black amber — announces your presence before you enter.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Oud</span>
+            <span class="shop-back-note">Saffron</span>
+            <span class="shop-back-note">Black Amber</span>
+            <span class="shop-back-note">Sandalwood</span>
+          </div>
+          <p class="shop-back-price">₹5,800</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="velvet-oud">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CARD 2 : Néroli Blanc ──────────────────── -->
+    <div class="shop-card-wrap" data-id="neroli-blanc">
+      <div class="shop-card">
+        <div class="shop-face shop-front">
+          <div class="shop-card-img">
+            <img src="img2/2.jpg" alt="Néroli Blanc" />
+          </div>
+          <p class="shop-card-name">Néroli Blanc</p>
+          <p class="shop-card-price">₹3,900</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="neroli-blanc">Add to Cart</button>
+        </div>
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Néroli Blanc</h3>
+          <p class="shop-back-desc">Sun-drenched neroli blossoms over a clean musk base — light as morning air, bright as a new beginning.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Neroli</span>
+            <span class="shop-back-note">Bergamot</span>
+            <span class="shop-back-note">White Musk</span>
+            <span class="shop-back-note">Green Tea</span>
+          </div>
+          <p class="shop-back-price">₹3,900</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="neroli-blanc">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CARD 3 : Lumière ───────────────────────── -->
+    <div class="shop-card-wrap" data-id="lumiere">
+      <div class="shop-card">
+        <div class="shop-face shop-front">
+          <div class="shop-card-img">
+            <img src="img2/3.jpg" alt="Lumière" />
+          </div>
+          <p class="shop-card-name">Lumière</p>
+          <p class="shop-card-price">₹4,200</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="lumiere">Add to Cart</button>
+        </div>
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Lumière</h3>
+          <p class="shop-back-desc">A radiant floral heart warmed by soft musk and white cedar — luminous, effortless, made to be worn every single day.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Peony</span>
+            <span class="shop-back-note">White Musk</span>
+            <span class="shop-back-note">Cedar</span>
+            <span class="shop-back-note">Bergamot</span>
+          </div>
+          <p class="shop-back-price">₹4,200</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="lumiere">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CARD 4 : Ambre Rose ────────────────────── -->
+    <div class="shop-card-wrap" data-id="ambre-rose">
+      <div class="shop-card">
+        <div class="shop-face shop-front">
+          <div class="shop-card-img">
+            <img src="img2/4.jpg" alt="Ambre Rose" />
+          </div>
+          <p class="shop-card-name">Ambre Rose</p>
+          <p class="shop-card-price">₹4,600</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="ambre-rose">Add to Cart</button>
+        </div>
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Ambre Rose</h3>
+          <p class="shop-back-desc">Turkish rose absolute dissolved into warm amber and vanilla — the most romantic scent we have ever made.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Turkish Rose</span>
+            <span class="shop-back-note">Amber</span>
+            <span class="shop-back-note">Vanilla</span>
+            <span class="shop-back-note">Tonka Bean</span>
+          </div>
+          <p class="shop-back-price">₹4,600</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="ambre-rose">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CARD 5 : Santal Doux ───────────────────── -->
+    <div class="shop-card-wrap" data-id="santal-doux">
+      <div class="shop-card">
+        <div class="shop-face shop-front">
+          <div class="shop-card-img">
+            <img src="img2/5.jpg" alt="Santal Doux" />
+          </div>
+          <p class="shop-card-name">Santal Doux</p>
+          <p class="shop-card-price">₹4,400</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="santal-doux">Add to Cart</button>
+        </div>
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Santal Doux</h3>
+          <p class="shop-back-desc">Creamy mysore sandalwood with a whisper of iris and soft violet — quiet confidence in a bottle.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Sandalwood</span>
+            <span class="shop-back-note">Iris</span>
+            <span class="shop-back-note">Violet</span>
+            <span class="shop-back-note">Soft Musk</span>
+          </div>
+          <p class="shop-back-price">₹4,400</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="santal-doux">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CARD 6 : Fleur Éternelle ────────────────── -->
+    <div class="shop-card-wrap" data-id="fleur-eternelle">
+      <div class="shop-card">
+        <div class="shop-face shop-front">
+          <span class="shop-bestseller-badge">Best Seller</span>
+          <div class="shop-card-img">
+            <img src="img2/6.jpg" alt="Fleur Éternelle" />
+          </div>
+          <p class="shop-card-name">Fleur Éternelle</p>
+          <p class="shop-card-price">₹4,900</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="fleur-eternelle">Add to Cart</button>
+        </div>
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Fleur Éternelle</h3>
+          <p class="shop-back-desc">An eternal bouquet of white jasmine and gardenia, dried on warm musk — timeless, feminine, unforgettable.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Jasmine</span>
+            <span class="shop-back-note">Gardenia</span>
+            <span class="shop-back-note">Peach</span>
+            <span class="shop-back-note">White Musk</span>
+          </div>
+          <p class="shop-back-price">₹4,900</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="fleur-eternelle">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CARD 1 : Velvet Oud ─────────────────────── -->
+    <div class="shop-card-wrap" data-id="velvet-oud">
+      <div class="shop-card">
+        <!-- FRONT -->
+        <div class="shop-face shop-front">
+          <div class="shop-card-img">
+            <img src="img2/7.jpg" alt="Velvet Oud" />
+          </div>
+          <p class="shop-card-name">Velvet Oud</p>
+          <p class="shop-card-price">₹5,800</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="velvet-oud">Add to Cart</button>
+        </div>
+        <!-- BACK -->
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Velvet Oud</h3>
+          <p class="shop-back-desc">Deep, smoky oud layered over warm saffron and black amber — announces your presence before you enter.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Oud</span>
+            <span class="shop-back-note">Saffron</span>
+            <span class="shop-back-note">Black Amber</span>
+            <span class="shop-back-note">Sandalwood</span>
+          </div>
+          <p class="shop-back-price">₹5,800</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="velvet-oud">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CARD 2 : Néroli Blanc ──────────────────── -->
+    <div class="shop-card-wrap" data-id="neroli-blanc">
+      <div class="shop-card">
+        <div class="shop-face shop-front">
+          <div class="shop-card-img">
+            <img src="img2/8.jpg" alt="Néroli Blanc" />
+          </div>
+          <p class="shop-card-name">Néroli Blanc</p>
+          <p class="shop-card-price">₹3,900</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="neroli-blanc">Add to Cart</button>
+        </div>
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Néroli Blanc</h3>
+          <p class="shop-back-desc">Sun-drenched neroli blossoms over a clean musk base — light as morning air, bright as a new beginning.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Neroli</span>
+            <span class="shop-back-note">Bergamot</span>
+            <span class="shop-back-note">White Musk</span>
+            <span class="shop-back-note">Green Tea</span>
+          </div>
+          <p class="shop-back-price">₹3,900</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="neroli-blanc">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CARD 3 : Lumière ───────────────────────── -->
+    <div class="shop-card-wrap" data-id="lumiere">
+      <div class="shop-card">
+        <div class="shop-face shop-front">
+          <div class="shop-card-img">
+            <img src="img2/9.jpg" alt="Lumière" />
+          </div>
+          <p class="shop-card-name">Lumière</p>
+          <p class="shop-card-price">₹4,200</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="lumiere">Add to Cart</button>
+        </div>
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Lumière</h3>
+          <p class="shop-back-desc">A radiant floral heart warmed by soft musk and white cedar — luminous, effortless, made to be worn every single day.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Peony</span>
+            <span class="shop-back-note">White Musk</span>
+            <span class="shop-back-note">Cedar</span>
+            <span class="shop-back-note">Bergamot</span>
+          </div>
+          <p class="shop-back-price">₹4,200</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="lumiere">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CARD 4 : Ambre Rose ────────────────────── -->
+    <div class="shop-card-wrap" data-id="ambre-rose">
+      <div class="shop-card">
+        <div class="shop-face shop-front">
+          <span class="shop-bestseller-badge">Best Seller</span>
+          <div class="shop-card-img">
+            <img src="img2/10.jpg" alt="Ambre Rose" />
+          </div>
+          <p class="shop-card-name">Ambre Rose</p>
+          <p class="shop-card-price">₹4,600</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="ambre-rose">Add to Cart</button>
+        </div>
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Ambre Rose</h3>
+          <p class="shop-back-desc">Turkish rose absolute dissolved into warm amber and vanilla — the most romantic scent we have ever made.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Turkish Rose</span>
+            <span class="shop-back-note">Amber</span>
+            <span class="shop-back-note">Vanilla</span>
+            <span class="shop-back-note">Tonka Bean</span>
+          </div>
+          <p class="shop-back-price">₹4,600</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="ambre-rose">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CARD 5 : Santal Doux ───────────────────── -->
+    <div class="shop-card-wrap" data-id="santal-doux">
+      <div class="shop-card">
+        <div class="shop-face shop-front">
+          <div class="shop-card-img">
+            <img src="img2/11.jpg" alt="Santal Doux" />
+          </div>
+          <p class="shop-card-name">Santal Doux</p>
+          <p class="shop-card-price">₹4,400</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="santal-doux">Add to Cart</button>
+        </div>
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Santal Doux</h3>
+          <p class="shop-back-desc">Creamy mysore sandalwood with a whisper of iris and soft violet — quiet confidence in a bottle.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Sandalwood</span>
+            <span class="shop-back-note">Iris</span>
+            <span class="shop-back-note">Violet</span>
+            <span class="shop-back-note">Soft Musk</span>
+          </div>
+          <p class="shop-back-price">₹4,400</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="santal-doux">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CARD 6 : Fleur Éternelle ────────────────── -->
+    <div class="shop-card-wrap" data-id="fleur-eternelle">
+      <div class="shop-card">
+        <div class="shop-face shop-front">
+          <div class="shop-card-img">
+            <img src="img2/12.jpg" alt="Fleur Éternelle" />
+          </div>
+          <p class="shop-card-name">Fleur Éternelle</p>
+          <p class="shop-card-price">₹4,900</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="fleur-eternelle">Add to Cart</button>
+        </div>
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Fleur Éternelle</h3>
+          <p class="shop-back-desc">An eternal bouquet of white jasmine and gardenia, dried on warm musk — timeless, feminine, unforgettable.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Jasmine</span>
+            <span class="shop-back-note">Gardenia</span>
+            <span class="shop-back-note">Peach</span>
+            <span class="shop-back-note">White Musk</span>
+          </div>
+          <p class="shop-back-price">₹4,900</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="fleur-eternelle">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- ─── CARD 1 : Velvet Oud ─────────────────────── -->
+    <div class="shop-card-wrap" data-id="velvet-oud">
+      <div class="shop-card">
+        <!-- FRONT -->
+        <div class="shop-face shop-front">
+          <div class="shop-card-img">
+            <img src="img2/13.jpg" alt="Velvet Oud" />
+          </div>
+          <p class="shop-card-name">Velvet Oud</p>
+          <p class="shop-card-price">₹5,800</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="velvet-oud">Add to Cart</button>
+        </div>
+        <!-- BACK -->
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Velvet Oud</h3>
+          <p class="shop-back-desc">Deep, smoky oud layered over warm saffron and black amber — announces your presence before you enter.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Oud</span>
+            <span class="shop-back-note">Saffron</span>
+            <span class="shop-back-note">Black Amber</span>
+            <span class="shop-back-note">Sandalwood</span>
+          </div>
+          <p class="shop-back-price">₹5,800</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="velvet-oud">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CARD 2 : Néroli Blanc ──────────────────── -->
+    <div class="shop-card-wrap" data-id="neroli-blanc">
+      <div class="shop-card">
+        <div class="shop-face shop-front">
+          <div class="shop-card-img">
+            <img src="img2/14.jpg" alt="Néroli Blanc" />
+          </div>
+          <p class="shop-card-name">Néroli Blanc</p>
+          <p class="shop-card-price">₹3,900</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="neroli-blanc">Add to Cart</button>
+        </div>
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Néroli Blanc</h3>
+          <p class="shop-back-desc">Sun-drenched neroli blossoms over a clean musk base — light as morning air, bright as a new beginning.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Neroli</span>
+            <span class="shop-back-note">Bergamot</span>
+            <span class="shop-back-note">White Musk</span>
+            <span class="shop-back-note">Green Tea</span>
+          </div>
+          <p class="shop-back-price">₹3,900</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="neroli-blanc">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CARD 3 : Lumière ───────────────────────── -->
+    <div class="shop-card-wrap" data-id="lumiere">
+      <div class="shop-card">
+        <div class="shop-face shop-front">
+          <div class="shop-card-img">
+            <img src="img2/15.jpg" alt="Lumière" />
+          </div>
+          <p class="shop-card-name">Lumière</p>
+          <p class="shop-card-price">₹4,200</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="lumiere">Add to Cart</button>
+        </div>
+        <div class="shop-face shop-back">
+          <p class="shop-back-type">Eau de Parfum</p>
+          <h3 class="shop-back-name">Lumière</h3>
+          <p class="shop-back-desc">A radiant floral heart warmed by soft musk and white cedar — luminous, effortless, made to be worn every single day.</p>
+          <div class="shop-back-notes">
+            <span class="shop-back-note">Peony</span>
+            <span class="shop-back-note">White Musk</span>
+            <span class="shop-back-note">Cedar</span>
+            <span class="shop-back-note">Bergamot</span>
+          </div>
+          <p class="shop-back-price">₹4,200</p>
+          <button class="shop-btn-cart" data-action="cart" data-id="lumiere">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ═══════════════════════════════════════════════
+     CHECKOUT MODAL
+═══════════════════════════════════════════════ -->
+<div id="checkout-modal" role="dialog" aria-modal="true">
+  <div class="checkout-box">
+    <button class="checkout-close" id="checkoutClose" aria-label="Close">&#x2715;</button>
+
+    <h2 class="checkout-title">Checkout</h2>
+
+    <!-- Order summary -->
+    <div class="checkout-summary" id="checkoutSummary"></div>
+
+    <!-- Delivery address -->
+    <div class="checkout-section">
+      <p class="checkout-section-title">Delivery Address</p>
+      <input type="text" id="ckName" class="checkout-input" placeholder="Full Name" required>
+      <input type="email" id="ckEmail" class="checkout-input" placeholder="Email Address" required>
+      <input type="tel" id="ckPhone" class="checkout-input" placeholder="Phone Number" required>
+      <textarea id="ckAddress" class="checkout-input checkout-textarea" placeholder="Full Address (House No, Street, Area)" required></textarea>
+      <div class="checkout-row">
+        <input type="text" id="ckCity" class="checkout-input" placeholder="City" required>
+        <input type="text" id="ckPincode" class="checkout-input" placeholder="Pincode" required>
+      </div>
+    </div>
+
+    <!-- Payment method -->
+    <div class="checkout-section">
+      <p class="checkout-section-title">Payment Method</p>
+      <div class="checkout-payment-options">
+        <label class="checkout-pay-opt">
+          <input type="radio" name="payment" value="cod" checked>
+          <span class="checkout-pay-label">Cash on Delivery</span>
+          <span class="checkout-pay-hint">Pay when your order arrives</span>
+        </label>
+        <label class="checkout-pay-opt">
+          <input type="radio" name="payment" value="upi">
+          <span class="checkout-pay-label">UPI</span>
+          <span class="checkout-pay-hint">Google Pay, PhonePe, Paytm</span>
+        </label>
+        <label class="checkout-pay-opt">
+          <input type="radio" name="payment" value="card">
+          <span class="checkout-pay-label">Credit / Debit Card</span>
+          <span class="checkout-pay-hint">Visa, Mastercard, Rupay</span>
+        </label>
+        <label class="checkout-pay-opt">
+          <input type="radio" name="payment" value="netbanking">
+          <span class="checkout-pay-label">Net Banking</span>
+          <span class="checkout-pay-hint">All major banks supported</span>
+        </label>
+      </div>
+
+      <!-- UPI ID field — shown only when UPI selected -->
+      <input type="text" id="ckUpiId" class="checkout-input checkout-conditional" placeholder="Enter UPI ID (e.g. name@upi)" style="display:none">
+
+      <!-- Card fields — shown only when Card selected -->
+      <div id="ckCardFields" class="checkout-conditional" style="display:none">
+        <input type="text" class="checkout-input" placeholder="Card Number" maxlength="19">
+        <div class="checkout-row">
+          <input type="text" class="checkout-input" placeholder="MM/YY" maxlength="5">
+          <input type="text" class="checkout-input" placeholder="CVV" maxlength="3">
+        </div>
+      </div>
+    </div>
+
+    <button class="checkout-place-order" id="checkoutPlaceOrder">Place Order</button>
+  </div>
+</div>
+
+  
+  <script src="shop.js"></script>
+</body>
+</html>
